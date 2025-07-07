@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex">
+<title>Google Mini Suche</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f8f8;
+    font-family: Arial, sans-serif;
+  }
+  #container {
+    width: 95vw;
+    max-width: 480px;
+    padding: 10px 8px;
+    background: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+  }
+  input[type="text"] {
+    flex-grow: 1;
+    min-width: 70px;
+    font-size: clamp(10px, 2vw, 16px);
+    padding: 6px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    padding: 6px 12px;
+    font-size: clamp(10px, 2vw, 16px);
+    background-color: #4285f4;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background-color 0.3s;
+  }
+  input[type="submit"]:hover {
+    background-color: #357ae8;
+  }
+  .button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+  }
+  .button-row a {
+    flex: 1 1 60px;
+    min-width: 50px;
+    padding: 4px 0;
+    text-align: center;
+    background: #ddd;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: clamp(9px, 1.5vw, 13px);
+    user-select: none;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+  }
+  .button-row a:hover {
+    background-color: #bbb;
+  }
+</style>
+</head>
+<body>
+  <div id="container">
+    <form action="https://www.google.com/search" method="GET" target="_self">
+      <input type="text" name="q" placeholder="Suche bei Google..." required />
+      <input type="submit" value="Suchen" />
+    </form>
+
+    <div class="button-row">
+      <a href="https://www.youtube.com/" rel="noopener noreferrer">YouTube</a>
+      <a href="https://www.amazon.de/" rel="noopener noreferrer">Amazon</a>
+      <a href="https://www.ebay.ch/" rel="noopener noreferrer">eBay</a>
+      <a href="https://www.netflix.com/ch/" rel="noopener noreferrer">Netflix</a>
+    </div>
+
+    <div class="button-row">
+      <a href="https://open.spotify.com/intl-de" rel="noopener noreferrer">Spotify</a>
+      <a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite" rel="noopener noreferrer">Wikipedia</a>
+      <a href="https://www.ikea.com/ch/de/" rel="noopener noreferrer">Ikea</a>
+      <a href="https://www.microsoft.com/de-de" rel="noopener noreferrer">Microsoft</a>
+    </div>
+
+    <div class="button-row">
+      <a href="https://www.apple.com/chde/" rel="noopener noreferrer">Apple</a>
+      <a href="https://chatgpt.com/" rel="noopener noreferrer">ChatGPT</a>
+      <a href="https://aternos.org/:de/" rel="noopener noreferrer">Aternos</a>
+      <a href="https://de.pornhub.com/" rel="noopener noreferrer">Pornhub</a>
+    </div>
+
+    <div class="button-row">
+      <a href="https://www.roblox.com/de/home" rel="noopener noreferrer">Roblox</a>
+      <a href="https://anton.app/de/" rel="noopener noreferrer">Anton</a>
+      <a href="https://scratch.mit.edu/" rel="noopener noreferrer">Scratch</a>
+      <a href="https://www.minecraft.net/de-de" rel="noopener noreferrer">Minecraft</a>
+    </div>
+  </div>
+</body>
+</html>
